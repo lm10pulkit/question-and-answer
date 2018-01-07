@@ -1,0 +1,9 @@
+ <h1>friends</h1>
+ <ul>
+ {{# each friends }}
+ <li> <a href='/friends?username={{this.username}}'>{{this.name}}</a></li>
+ {{/ each}}
+ </ul>
+ <form method='get' action ='/request'>
+   <input type='submit' value ='requests'>
+ </form>

@@ -1,0 +1,10 @@
+<form method='post' action='/questionask?username={{user.username}}'>
+<input type='submit' value='questions asked'>
+</form>
+<form method='post' action='/questionans?username={{user.username}}'>
+<input type='submit' value='questions answered'>
+</form>
+<form method='post' action='/askaquestion?username={{user.username}}'>
+     question : <input type='text' name='question' required> <br></br>
+     <input type='submit' value ='ask a question'>  
+</form>

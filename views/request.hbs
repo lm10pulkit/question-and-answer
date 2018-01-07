@@ -1,0 +1,11 @@
+{{# each request}}
+<form method='post' action='/question?_id={{this._id}}'>
+  request by : {{this.from}} <br></br>
+  question : {{this.question}} ? <br></br>
+  answer <input type ='text' name ='answer' required> <br></br>
+  <input type='submit' value='post'>
+</form>
+<form method='post' action='/deleterequest?_id={{this._id}}'>
+  <input type='submit' value='delete'>
+</form>
+{{/each}}
